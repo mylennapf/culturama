@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa Culturama</title>
 </head>
+
 <body>
     <header>
         <h1>Pesquisa Online</h1>
@@ -12,40 +14,87 @@
     <section>
         <form action="" method="get">
             <fieldset>
-                           <!--DADOS PESSOAIS-->
-                <legend>Informações Pessoais</legend> 
+                <!--DADOS PESSOAIS-->
+                <legend>Informações Pessoais</legend>
 
-            <label for="userName">Nome</label>
-            <input type="text" name="userName" placeholder="Digite seu nome" required>
-            <br>
+                <label for="userName">Nome</label>
+                <input type="text" name="userName" placeholder="Digite seu nome" required>
+                <br>
 
-            <label for="userAge">Idade</label>
-            <input type="number" name="userAge" min="12" max="100" required> 
-            <br>
-
-
-            <label for="birthDate">Data de Nascimento</label>
-            <input type="date" name="birthDate">
-            <br>
+                <label for="userAge">Idade</label>
+                <input type="number" name="userAge" min="12" max="100" required>
+                <br>
 
 
-            <label for="userEmail">E-mail</label>
-            <input type="email" name="userEmail" placeholder="Digite seu e-mail" required>
-            <br>
+                <label for="birthDate">Data de Nascimento</label>
+                <input type="date" name="birthDate">
+                <br>
 
-            <label for="userPhone">Telefone</label>
-            <input type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen">
-            <br>
 
-            <label for="userPhoto">Upload de Foto</label>
-            <input type="file" accept="image/*" name="userPhoto" id="userPhoto">
-            <br>
-                        </fieldset>
+                <label for="userEmail">E-mail</label>
+                <input type="email" name="userEmail" placeholder="Digite seu e-mail" required>
+                <br>
+
+                <label for="userPhone">Telefone</label>
+                <input type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen">
+                <br>
+
+                <label for="userPhoto">Upload de Foto</label>
+                <input type="file" accept="image/*" name="userPhoto" id="userPhoto">
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Perfil</legend>
+
+                <p>Gênero:</p>
+                <input type="radio" name="userGender" value="Masculino" id="male">
+                <label for="userGender">Masculino</label>
+                <input type="radio" name="userGender" value="Feminino" id="female">
+                <label for="userGender">Feminino</label>
+                <input type="radio" name="userGender" value="non-binary" id="non-binary">
+                <label for="userGender">Não Binário</label>
+                <input type="radio" name="userGender" value="notInformed" id="notInformed">
+                <label for="userGender">Prefiro não informar</label>
+                <br>
+
+                <label for="maritalStatus">Estado Civil:</label>
+                <select name="maritalStatus">
+                    <option value="notInformed">Selecione...</option>
+                    <option value="casado">Casado</option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="viuvo">Viúvo</option>
+                </select>
+
+                <label for="userState">Estado:</label>
+                <select name="userState" required>
+                    <option value="notInformed">Selecione...</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                   
+                </select>
+
+                <label for="userCity">Cidade:</label>
+                <input type="text" id="userCity" name="userCity" autocomplete="address-level2" placeholder="Digite sua cidade">
+
+
+
+            </fieldset>
 
             <button type="submit">Enviar</button>
-        
+
         </form>
     </section>
-    
+
 </body>
+
 </html>
