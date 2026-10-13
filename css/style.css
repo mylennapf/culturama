@@ -15,6 +15,16 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
+
+.success-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 header{
     text-align: center;
     margin-bottom: 20px;
@@ -23,10 +33,20 @@ header{
 h1{
     font-family:"Fjalla One", sans-serif;
 }
+
+.success-page section {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
 form{
     background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 fieldset{
     border: 1px solid #cccccc;
@@ -43,6 +63,11 @@ legend{
 label{
     display: inline-block;
     margin-bottom: 5px;
+}
+
+p{
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 img{
@@ -67,4 +92,28 @@ input[type="radio"], input[type="checkbox"]{
 input[type="color"]{
     width: 40px;
     padding: 0 5px;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border-color: red;
+}
+input:valid, select:valid, textarea:valid {
+    border-color: green;
+}
+button {
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+button[type="reset"]:hover {
+    background-color: orangered;
+    color: white;
 }
